@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivyaa Jewels - Chic Adornments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <img src="./logo_header.png" alt="Kivyaa Jewels Logo" class="logo-image">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Right side container for nav and search -->
+            <div class="header-right">
+                <!-- Main Navigation -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><button type="button" class="nav-button" data-target="home">Home</button></li>
+                        <li><button type="button" class="nav-button" data-target="shop">Shop</button></li>
+                        <li><button type="button" class="nav-button" data-modal-target="#aboutModal">About</button></li>
+                        <li><a href="mailto:hello@kivyaajewels.co.in" class="nav-button">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Search -->
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="./logo_header.png" alt="Kivyaa Jewels Logo" class="hero-logo">
+            <a href="#shop" class="cta-button">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop" id="shop">
+        <div class="container">
+            <h2>Shop Collection</h2>
+            <div class="filters">
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="earrings">Earrings</option>
+                    <option value="necklaces">Necklaces</option>
+                    <option value="rings">Rings</option>
+                    <option value="bracelets">Bracelets</option>
+                </select>
+                <select id="sort">
+                    <option value="">Sort By</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="price-asc">Price (Low to High)</option>
+                    <option value="price-desc">Price (High to Low)</option>
+                </select>
+            </div>
+            <div class="products-grid">
+                <!-- Product cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><button type="button" class="footer-nav-button" data-target="home">Home</button></li>
+                        <li><button type="button" class="footer-nav-button" data-target="shop">Shop</button></li>
+                        <li><button type="button" class="footer-nav-button" data-modal-target="#aboutModal">About</button></li>
+                        <li><a href="mailto:hello@kivyaajewels.co.in" class="footer-nav-button">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/kivyaajewels" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: hello@kivyaajewels.co.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kivyaa Jewels. All rights reserved.</p>
+                <p>Developed by Dhairya Kanabar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal - Removed -->
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal about-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="logo_header.png" alt="Kivyaa Jewels Logo" class="about-image">
+                <div class="about-text">
+                    <p>Kivyaa Jewels offers exquisite jewelry combining timeless elegance with contemporary design. Each piece is meticulously crafted to help you tell your unique story.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal contact-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 77377 77377</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:hello@kivyaajewels.co.in">hello@kivyaajewels.co.in</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <p><a href="https://instagram.com/kivyaajewels" target="_blank">@kivyaajewels</a></p>
+                    </div>
+                </div>
+                <!-- Removing the contact form as requested -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
